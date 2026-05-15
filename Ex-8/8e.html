@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8e</title>
+  </head>
+  <body>
+    <script>
+      const product1 ={
+        name: 'basketball',
+        price: 2095,
+      };
+      const product2 = {
+        name:'cotton socks',
+        price: 1599
+      };
+
+      function isSameProduct(product1,product2){
+        if(product1.name === product2.name && product1.price === product2.price){
+          console.log('true');
+        }
+        else{
+          console.log('false');
+        }
+      }
+
+      isSameProduct(product1,product2);
+    </script>
+  </body>
+</html>
