@@ -1,0 +1,25 @@
+body {
+  font-family: Arial;
+}
+
+
+
+.calculate-button {
+  background-color: green;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cost-input {
+  font-size: 15px;
+  height: 26px;
+}
+
+.js-error-message{
+  color: red;
+}
