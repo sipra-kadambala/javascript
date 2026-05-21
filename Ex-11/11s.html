@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <script>
+
+
+    function removeEgg(food) {
+
+      const result = [];
+      let eggCount=0;
+      for (let i = 0; i < food.length; i++) {
+        if (food[i] === 'egg' && eggCount <2) {
+          eggCount++;
+          continue;
+        }
+
+        result.push(food[i]);
+      }
+      return result;
+    }
+
+    console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+  </script>
+</body>
+
+</html>
