@@ -11,8 +11,9 @@
     <script>
       function updateButton(){
         const button = document.querySelector('.button-start');
+        button.innerHTML = 'Loading...';
         setTimeout(function(){
-          button.innerHTML = 'Finished';
+          button.innerHTML = 'Finished!';
         },1000);
       }
     </script>

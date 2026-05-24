@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>12a</title>
+    <title>12b</title>
   </head>
   <body>
     <script>
@@ -10,6 +10,21 @@
       };
       add();
       add();
+
+
+      const fun = function(){
+        console.log('12b');
+      };
+
+      function runtwice(para){
+        para();
+        para();
+      }
+
+      runtwice(fun);
+
+      runtwice(add);
+
     </script>
   </body>
 </html>
