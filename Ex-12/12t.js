@@ -24,10 +24,15 @@ function autoPlay() {
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
+
+
+    document.querySelector('.js-auto-button').innerHTML = 'Stop Playing';
   }
   else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+
+    document.querySelector('.js-auto-button').innerHTML = 'Auto Play';
   }
 
 }
