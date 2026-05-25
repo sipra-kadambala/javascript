@@ -2,18 +2,21 @@
 <html>
   <head></head>
   <body>
-    <button class="js-button" onclick="updateButton()">
+    <button class="js-button js-add-button">
       Add to cart
     </button>
     <p class="message"></p>
 
     <script>
+      document.querySelector('.js-add-button').addEventListener('click',()=>{
+        updateButton();
+      })
       function updateButton() {
         const button = document.querySelector('.message');
 
         button.innerHTML = 'Added';
 
-        setTimeout(function(){
+        setTimeout(() => {
           button.innerHTML = '';
         }, 2000);
       }

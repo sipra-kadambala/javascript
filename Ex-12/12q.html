@@ -8,17 +8,13 @@
       Start
     </button>
     <script>
-
-      document.querySelector('.js-start-button').addEventListener('click',()=>{
+      document.querySelector('.js-start-button').addEventListener('click', () =>{
         updateButton();
       });
-
-
       function updateButton(){
         const button = document.querySelector('.button-start');
-        button.innerHTML = 'Loading...';
-        setTimeout(() =>{
-          button.innerHTML = 'Finished!';
+        setTimeout(function(){
+          button.innerHTML = 'Finished';
         },1000);
       }
     </script>
